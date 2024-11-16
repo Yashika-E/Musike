@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Musike</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="musicstyle.css">
+</head>
+<body>
+    <div class='new'><center><h1>Musike</h1></center></div>
+    <div class='navigation'>
+        
+        <div class='navigator'>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <span class='fa fa-home'></span>
+                        <span>Home</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href='#Search'>
+                        <span class='fa fa-search'></span>
+                        <span>Search</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href='#'>
+                        <span class='fa fas fa-book'></span>
+                        <span>Artist</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href='#playlist'>
+                        <span class='fa fas fa-plus-square'></span>
+                        <span>Create playlist</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href='#liked'>
+                        <span class='fa fas fa-heart'></span>
+                        <span>Liked songs</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class='intro'>
+        <div class="musike-title">
+            <h1>Musike</h1>
+        </div>
+        <div class='login'>
+            <ul>
+                
+                <li><a href=''>Premium</a></li>
+                <li><a href=''>Support</a></li>
+                <li><a href=''>Download</a></li>
+                <li><a href=''>Sign Up</a></li>
+                <li><button type='button'>Setting</button></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class='content'>
+        <div class="spotify-playlists">
+            <h2><blink>Musike Playlists</blink></h2>
+
+            <div class="list">
+                <!-- First Song -->
+                <div class="item">
+                    <img src="https://www.masala.com/cloud/2023/12/28/cropped-pairings.png">
+                    <h4>chaleya</h4>
+                    <p>anirudh<br>(From "Jawan")</p>
+                    <div class="song">
+                        <span class='fa fa-play' onclick="playAudio('chaleya1')"></span>
+                        <audio id="chaleya1" src="chaleya.mp3"></audio>
+                    </div>
+                </div>
+
+                <!-- Second Song -->
+                <div class="item">
+                    <img src="https://pbs.twimg.com/media/F06sRZFaMAELO9m.jpg">
+                    <h4>Hukum-Alappara</h4>
+                    <p>Anirudh Ravichander<br>(From "Jailer")</p>
+                    <div class="song">
+                        <span class="fa fa-play" onclick="playAudio('chaleya2')"></span>
+                        <audio id="chaleya2" src="chaleya.mp3"></audio>
+                    </div>
+                </div>
+
+                <!-- Third Song -->
+                <div class="item">
+                    <img src="https://www.tvguide.com/a/img/catalog/provider/1/2/1-12711740175.jpg">
+                    <h4>The Monster</h4>
+                    <p>Ravi Basrur, Adithi Sagar<br>(From "K.G.F")</p>
+                    <div class="song">
+                        <span class="fa fa-play" onclick="playAudio('chaleya3')"></span>
+                        <audio id="chaleya3" src="The-Monster-Song-MassTamilan.so.mp3"></audio>
+                    </div>
+                </div>
+
+                <!-- Fourth Song -->
+                <div class="item">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMTJjN2NhY2EtYzZkOC00NDQ0LWFhMzEtNWZhYTFhNzNhNjllXkEyXkFqcGdeQXVyMTUyNjIwMDEw._V1_.jpg">
+                    <h4>Naan Gaali</h4>
+                    <p>Sean Ronald, Mohan Rajan<br>(From "Good Night")</p>
+                    <div class="song">
+                        <span class="fa fa-play" onclick="playAudio('chaleya4')"></span>
+                        <audio id="chaleya4" src="Naan-Gaali-MassTamilan.dev.mp3"></audio>
+                    </div>
+                </div>
+
+                <!-- Fifth Song -->
+                <div class="item">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNzExYzU3ZGItYjVlMy00ZTBjLWIyNTMtYzk5MTliNDljNjAwXkEyXkFqcGdeQXVyMTU0ODI1NTA2._V1_.jpg">
+                    <h4>Veerane</h4>
+                    <p>A.R. Rahman, A.R. Ameen<br>(From "Maamannan")</p>
+                    <div class="song">
+                        <span class="fa fa-play" onclick="playAudio('chaleya5')"></span>
+                        <audio id="chaleya5" src="Veerane-MassTamilan.dev.mp3"></audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to play audio
+        function playAudio(id) {
+            var audios = document.querySelectorAll('audio');
+            audios.forEach(function(audio) {
+                audio.pause();
+            });
+            var audio = document.getElementById(id);
+            audio.play();
+        }
+    </script>
+
+</body>
+</html>
