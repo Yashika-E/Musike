@@ -1,6 +1,6 @@
-# JaZZ-OPERA - Music Site
+# Musike - Music Site
 
-Welcome to JaZZ-OPERA, a music site dedicated to offering a rich collection of jazz and opera playlists. Here, you can explore various artists, create playlists, and enjoy your favorite songs.
+Welcome to Musike, a music site dedicated to offering a rich collection of playlists. Here, you can explore various artists, create playlists, and enjoy your favorite songs.
 
 ## Table of Contents
 
@@ -24,19 +24,21 @@ Welcome to JaZZ-OPERA, a music site dedicated to offering a rich collection of j
 # To run this project locally, follow these steps:
 
 1. Clone the repository:
-    ```sh
-    git clone https://github.com/your-username/JaZZ-OPERA.git
-    ```
+
+   ```sh
+   git clone https://github.com/Yashika-E/Musike.git
+   ```
 
 2. Navigate to the project directory:
-    ```sh
-    cd JaZZ-OPERA
-    ```
+
+   ```sh
+   cd Musike
+   ```
 
 3. Open the `index.html` file in your preferred web browser:
-    ```sh
-    open index.html
-    ```
+   ```sh
+   open index.html
+   ```
 
 ## Usage
 
@@ -59,4 +61,3 @@ Welcome to JaZZ-OPERA, a music site dedicated to offering a rich collection of j
 
 - Icons: [Font Awesome](https://fontawesome.com/)
 - Images and Audio: Sourced from various free online resources.
-
